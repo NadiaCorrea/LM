@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Funciones Globales</title>
+</head>
+<body>
+    <p>Click</p>
+    <button onclick="myFunction()">Here</button>
+    <p id="demo"></p>
+
+<script>
+    function myFunction(){
+        let a = parseFloat("10") + "<br>";
+        let b = parseFloat("10.00") + "<br>";
+        let c = parseFloat("10.33") + "<br>";
+        let d = parseFloat("34 45 66") + "<br>";
+        let e = parseFloat("   60   ") + "<br>";
+        let f = parseFloat("40 years") + "<br>";
+        let g = parseFloat("He was 40") + "<br>";
+
+        let n = a + b + c + d + e + f + g;
+        document.getElementById("demo").innerHTML = n;
+    }
+
+</script>
+    
+</body>
+</html>

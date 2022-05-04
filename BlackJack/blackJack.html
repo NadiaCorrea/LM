@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" type="text/css" href="blackJack.css">
+</head>
+<body>
+    <div id="logo">
+        <img src="logoBlackJack.png" >
+    </div>
+    <div id="mensajeBienvenida"></div>
+
+    <div id="mensajeGamer">
+        <p id="titulo">Tus cartas</p>
+    </div>
+
+    <div id="opciones">
+        <p class="pregunta">¿Quieres continuar?</p>
+    </div>
+
+    <div id="botones"  class="botones">
+        <div class="continuar">
+            <button onclick="juegaGamer()">Si</button>
+        </div>
+        <div class="salir">
+            <button onclick="juegaDealer()">No</button>
+        </div>
+    </div>
+    <div>
+        <div id="cabecera"></div>
+        <div id="mensajeDealer"></div>
+    </div>
+
+    <div id="resultado"></div>
+
+    <div id="volver">
+        <div class="volver">
+            <button class="jugar" onclick="volverAJugar()">Volver a jugar</button>
+        </div>
+        <div class="salir">
+            <button onclick="salirAdios()">Salir</button>
+        </div>
+    </div>
+    <div id="despedida"></div>
+
+</body>
+</html>
+<script src="blackJack.js"></script>
