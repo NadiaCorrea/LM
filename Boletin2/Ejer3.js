@@ -5,7 +5,7 @@ del array está (no olvides que en el array la primera posición es la 0).  */
 let array =[];
 let i = 0;
 let num; 
-let menor = 9999999;
+let menor = 9999999;// se debe usar el primer num en lugar de una variable externa 
 do{
     num = parseInt(prompt("Introduce un número: "));
     if (num < menor){

@@ -23,3 +23,4 @@ function notas(trim1, trim2, trim3){
 }
 
 notas(6,7,9);
+notas(2,5,3);
