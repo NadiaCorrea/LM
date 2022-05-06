@@ -25,8 +25,10 @@ console.log(letras.sort());
 /*• Crea un array que contenga los valores 1,8,100,300,3.
  Utilizando el mismo método anterior, muestra por consola el array ordenado. ¿Qué pasa? ¿por qué crees que es?. */
 
-let numbers = [1,8,100,300,3];
+let numbers = [1,8,100,300,3]; // necesita una funcion que coge el unicode
 console.log(numbers.sort());
+let numbers2 = [1,8,100,300,3];
+console.log(numbers.sort((a,b)=>a-b)); //orden ascendente si lo queremos en orden descendente b - a
 
  /*• Crea un array de objetos de usuario. Concretamente serán 6 objetos.
   Los objetos estarán compuestos por name y por online. 
