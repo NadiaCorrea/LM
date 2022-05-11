@@ -21,7 +21,7 @@ propiedad prestado será false).
 
 class Disco {
 
-    constructor (){
+    constructor(){
         this.nombre = "";
         this.cantante = "";
         this.publicacion="";
@@ -65,6 +65,8 @@ class Disco {
         Tipo de música: ${this.tipo} <br>
         Estantería: ${this.localizacion}`
     }
-
-
 }
+
+
+
+
