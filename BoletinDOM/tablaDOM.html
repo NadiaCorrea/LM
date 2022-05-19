@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tablas DOM</title>
+ 
+<script type="text/javascript">
+function reeplazo(){
+    let tabla=document.getElementById("tabla");
+    let filas = tabla.getElementsByTagName("tr");
+    a=parseInt(prompt("Seleccione una fila")) - 1;
+    b=parseInt(prompt("Seleccione otra fila")) - 1;
+    let row1 = filas[a];
+    let row2 = filas[b];
+    let colsText1= row1.getElementsByTagName("td");
+    let colsText2= row2.getElementsByTagName("td");
+    valor=colsText1.length-1
+    for (i=0; i <= valor; i++){
+        valoresNuevos1=[];
+        valoresNuevos1[i]=colsText1[i].innerHTML;
+        valoresNuevos2=[];
+        valoresNuevos2[i]=colsText2[i].innerHTML;
+    
+        colsText1[i].innerHTML=valoresNuevos2[i];
+        colsText2[i].innerHTML=valoresNuevos1[i];
+    
+    }
+}
+function borrarFila(){
+    let tabla=document.getElementById("tabla");
+    let filas = tabla.getElementsByTagName("tr");
+    r=parseInt(prompt("Seleccione una fila"));
+    
+    let rowb = filas[r -1];
+    rowb.remove();
+}
+function creaFila(){
+    let tabla=document.getElementById("tabla");
+    
+    texto1=prompt("Valor Columna 1");
+    texto2=prompt("Valor Columna 2");
+    c1= document.createElement("td");
+    c2= document.createElement("td");
+    f1= document.createElement("tr");
+    text1= document.createTextNode(texto1);
+    text2 = document.createTextNode(texto2);
+    c1.appendChild(text1);
+    c2.appendChild(text2);
+    f1.appendChild(c1);
+    f1.appendChild(c2);
+    tabla.appendChild(f1);
+}
+</script>
+
+</head>
+<body
+<div id="1">
+    <table id="tabla" border="1">
+        <tr>
+            <td>1</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>C</td>
+        </tr>
+    </table>
+</div>    
+
+
+<input type="button" value="Borrar" onclick="borrarFila()">
+<input type="button" value="Crear Fila" onclick="creaFila()">
+<input type="button" value="Reemplazar" onclick="reeplazo()">
+</body>
+</html>
