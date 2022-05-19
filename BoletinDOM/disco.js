@@ -29,14 +29,15 @@ class Disco {
         this.localizacion = 0;
         this.prestado = false;
     }
-    constructor(nombre, cantante, publicacion, tipo, localizacion){
+    
+    /*constructor(nombre, cantante, publicacion, tipo, localizacion){
         this.nombre = nombre;
         this.cantante = cantante;
         this.publicacion= publicacion;
         this.setTipo(tipo);
         this.localizacion = localizacion;
         this.prestado = false;
-    }
+    }*/
    
     setLocalizacion(nuevaEstanteria){
         if (nuevaEstanteria > 0){
